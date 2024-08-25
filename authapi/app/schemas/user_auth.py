@@ -38,6 +38,7 @@ class UserAuthResponse(BaseModel):
 
     class Config:
         orm_mode = True
+        from_attributes = True
         schema_extra = {
             "example": {
                 "id": "123e4567-e89b-12d3-a456-426614174000",

@@ -20,6 +20,7 @@ class UserInDBBase(UserBase):
 
     class Config:
         orm_mode = True 
+        from_attributes = True
 
 class User(UserInDBBase):
     pass
